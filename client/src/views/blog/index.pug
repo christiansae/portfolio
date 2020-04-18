@@ -1,0 +1,26 @@
+extends ../layouts/main.pug
+block title
+    title Blogs
+    
+block content 
+    div(class="container blog-page index-page")
+        div(class="row")
+            div(class="col-md-8")
+                div(class="row")
+                    div(class="col-md-12")
+                        div(class="content-box")
+                            a(href="/blogs/title")
+                                h1 Top 10 best javascript libraries
+                
+                    div(class="col-md-12")
+                        div(class="content-box")
+                            a(href="/blogs/title")
+                                h1 My life as a developer
+                    
+                    div(class="col-md-12")
+                        div(class="content-box")
+                            a(href="/blogs/title")
+                                h1 Learning Python
+            div(class="col-md-4")
+                div(class="content-box")
+                    include ../includes/side-ad.pug

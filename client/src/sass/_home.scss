@@ -1,0 +1,29 @@
+.content-area{
+    .topHeader{
+        display: flex;
+        
+        .topLeft{
+            background: $topLeftBG;
+            width: 50%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            h1{
+                color: white;
+                font-size: 5rem;
+                font-family: $displayFont;
+                letter-spacing: 4px;
+            }
+        }
+        .topRight{
+            background: $topRightBG;
+            width: 50%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

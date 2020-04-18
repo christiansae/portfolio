@@ -1,0 +1,19 @@
+.content-area{
+    
+    .about-page{
+        
+        .content-box{
+            
+            h1{
+                font-familY: $displayFont;
+                font-size: 2rem;
+                font-weight: 500;
+                margin-bottom: 1.2rem;
+            }
+            
+            img{
+                height: 300px;
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.projects-page.index-page{
+    
+    .project-img{
+        position: relative;
+        overflow: hidden;
+        
+        &:hover{
+            .inside{
+                transform: translate(0,0);
+            }
+        }
+        
+        .inside{
+            background: rgba(34,37,100,.9);
+            position: absolute;
+            top: 0;
+            transform: translate(0, 100%);
+            color: white;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: all .7s ease-in-out;
+            text-align: center;
+            a{
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                 &:hover{
+                    h4{
+                        color: lightcoral;
+                    }
+                 }
+            }
+            h4{
+                font-family: $displayFont;
+                display: block;
+                max-width: 150px;
+                margin-bottom: .8rem;
+                text-align: center;
+                font-size: 2rem;
+            }
+            
+            .tags{
+                display: block;
+                max-width: 50%;
+                margin: 0 auto;
+                text-align: center;
+                
+                .pill{
+                    display: inline-block;
+                    background: red;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    margin-bottom: .5rem;
+                    margin-right: .5rem;
+                }
+            }
+        }
+    }
+}
