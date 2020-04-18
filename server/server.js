@@ -2,6 +2,7 @@ const express = require('express');
 const webRoutes = require('./routes/web.js');
 const pug = require('pug');
 const path = require('path');
+require('dotenv').config()
 
 const app = express();
 
@@ -13,7 +14,5 @@ app.set('views', path.join(__dirname, '../client/src/views'));
 app.use(webRoutes);
 
 app.listen(process.env.PORT || 3000, () =>{
-    console.log("Connected to port:3000");
+    console.log('Server is running on http://www.localhost:3000/ to stop running server press control+c' + process.env.DB_USERNAME);
 })
-
-var pass ="johnny2341"; 
