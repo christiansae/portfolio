@@ -12,6 +12,6 @@ app.set('views', path.join(__dirname, '../client/src/views'));
 
 app.use(webRoutes);
 
-app.listen(3000, () =>{
+app.listen(process.env.PORT || 3000, () =>{
     console.log("Connected to port:3000");
 })
